@@ -33,13 +33,23 @@
   /* ── PERMANENT PHOTOREALISTIC GARDEN BACKGROUND ──
      Embedded inline (no external file). A soft-focus, depth-layered
      botanical scene with rose bokeh and warm light. */
-  <button onclick="document.getElementById('bgmusic').play()">
-  🎵 Musik starten
-</button>
+ <body>
 
-<audio id="bgmusic" loop>
-  <source src="musik.mp3" type="audio/mpeg">
-</audio>
+  <h1>Test</h1>
+
+  <button onclick="playMusic()">🎵 Start</button>
+
+  <audio id="music" loop>
+    <source src="musik.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function playMusic() {
+      document.getElementById("music").play();
+    }
+  </script>
+
+</body>
  
   .page-bg {
     position: fixed; inset: 0; z-index: -2;
